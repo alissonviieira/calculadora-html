@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calculadora</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    
+    <div><h1>Calculadora HTML</h1></div>
+    </div>
+    <div class="calculator">
+        
+      <input type="text" id="display" readonly>
+      <div class="buttons">
+        <div class="row">
+          <button onclick="clearDisplay()">C</button>
+          <button onclick="backspace()">&#9003;</button>
+          <button onclick="appendCharacter('/')">/</button>
+          <button onclick="appendCharacter('*')">*</button>
+        </div>
+        <div class="row">
+          <button onclick="appendCharacter('7')">7</button>
+          <button onclick="appendCharacter('8')">8</button>
+          <button onclick="appendCharacter('9')">9</button>
+          <button onclick="appendCharacter('-')">-</button>
+        </div>
+        <div class="row">
+          <button onclick="appendCharacter('4')">4</button>
+          <button onclick="appendCharacter('5')">5</button>
+          <button onclick="appendCharacter('6')">6</button>
+          <button onclick="appendCharacter('+')">+</button>
+        </div>
+        <div class="row">
+          <button onclick="appendCharacter('1')">1</button>
+          <button onclick="appendCharacter('2')">2</button>
+          <button onclick="appendCharacter('3')">3</button>
+          <button onclick="calculate()">=</button>
+        </div>
+        <div class="row">
+          <button class="button-wide" onclick="appendCharacter('0')">0</button>
+          <button onclick="appendCharacter('.')">.</button>
+          <button onclick="sqrt()">√</button>
+        </div>
+      </div>
+    </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
